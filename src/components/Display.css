@@ -1,0 +1,75 @@
+.hero {
+  width: 50vw;
+  background: white;
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.name {
+  font-size: 2.3em;
+}
+
+.counter {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.person {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch
+}
+
+.person-info {
+  margin-left: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+
+
+hr {
+  border: 0;
+  margin-left: 1.5rem;
+  width: 50%;
+  height: 2px;
+  background:#34A5DA;
+}
+
+.favorite-movies {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.navbar {
+  padding-top: 0.5rem;
+  background-color: #222222;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.change-button {
+  background-color: #34A5DA;
+  color: white;
+  margin: 0 0.5rem;
+  border-radius: 19px;
+  width: 70px;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+
+
+

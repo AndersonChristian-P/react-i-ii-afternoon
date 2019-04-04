@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Previous from "./Previous"
 import Next from "./Next"
 import Data from "./Data"
+import './Display.css'
 
 class Display extends Component {
 
@@ -44,34 +45,36 @@ class Display extends Component {
     })
 
     return (
-      <div>
+      <div className="hero">
 
         <div className="counter">{this.state.data[this.state.indexId].id}/{this.state.data.length}</div>
 
-        <div className="name"> {this.state.data[this.state.indexId].name.first} {this.state.data[this.state.indexId].name.last}</div>
 
-        <hr />
 
-        <div className="location"><strong>From:</strong> {this.state.data[this.state.indexId].city}, {this.state.data[this.state.indexId].country}</div>
-        <div className="job-title"><strong>Job Title:</strong> {this.state.data[this.state.indexId].title}</div>
-        <div className="job-title"><strong>Employer</strong> {this.state.data[this.state.indexId].employer}</div>
+        <div className="person">
+          <div className="person-info name"> {this.state.data[this.state.indexId].name.first} {this.state.data[this.state.indexId].name.last}</div>
+          <hr className="hr" />
+          <div className="person-info"><strong>From:</strong> {this.state.data[this.state.indexId].city}, {this.state.data[this.state.indexId].country}</div>
+          <div className="person-info"><strong>Job Title:</strong> {this.state.data[this.state.indexId].title}</div>
+          <div className="person-info"><strong>Employer</strong> {this.state.data[this.state.indexId].employer}</div>
+        </div>
 
         <br />
 
-        <div className="favorite-Movies" key={this.state.indexId}><strong>Favorite Movies:</strong></div>
-        <ol>
-          {movie}
-        </ol>
+        <div className="favorite-movies" key={this.state.indexId}><strong>Favorite Movies:</strong>
+          <ol>
+            {movie}
+          </ol>
+        </div>
 
         <div className="navbar">
           <Previous task={this.handleClickPrev} />
-          <span>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>New</button>
-          </span>
+          <div>
+            <div className="change-button">Edit</div>
+            <div className="change-button">Delete</div>
+            <div className="change-button">New</div>
+          </div>
           <Next task={this.handleClickNext} />
-
         </div>
 
       </div >

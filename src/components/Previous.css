@@ -1,0 +1,10 @@
+.previous-button {
+  width: 120px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: left;
+  background-color: Transparent;
+  border: none;
+  color: white;
+}
